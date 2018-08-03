@@ -8,9 +8,24 @@ Streaming - Strome , Spark Streaming
 Graph-  Giraph, GraphDB
 In Memory- Spark
 
+-----------------------------------------------------Hadoop Components---------------------------------------------------------------------
+
+Hadoop Common: The common utilities that support the other Hadoop modules.
+Hadoop Distributed File System (HDFS™): A distributed file system that provides high-throughput access to application data.
+Hadoop YARN: A framework for job scheduling(Fair & Capacity) and cluster resource management (Resources- Disk,RAM,Compute/Processor).
+Hadoop MapReduce: A YARN-based system for parallel processing of large data sets.
+
+-----------------------------------------------------References----------------------------------------------------------------------------
+Capacity Schedulrer - https://hortonworks.com/blog/understanding-apache-hadoops-capacity-scheduler/
+
+
 -----------------------------------------------------Terms for Understanding---------------------------------------------------------------
 
 Throughput - In general terms, throughput is the maximum rate of production or the maximum rate at which something can be processed.
 Network Throughput -  rate of successful message delivery over a communication channel
 Disk Throughput - Disk Performance Basics. Input/output operations per second or IOPS (IO/s), throughput (MB/s or MiB/s), and response time (ms) are the common performance measurements for storage devices, such disk drives or RAID sets.
+
+------------------------------------------------------Topics for furter studies------------------------------------------------------------
+Scheduling Algorithms- For scheduling the queues there are many algorithm used.
+Ref- https://www.go4expert.com/articles/types-of-scheduling-t22307/
 
