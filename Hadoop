@@ -8,6 +8,34 @@ Streaming - Strome , Spark Streaming
 Graph-  Giraph, GraphDB
 In Memory- Spark
 
+-----------------------------------------------------Topics to study in detail-------------------------------------------------------------
+MapReduce
+YARN
+    -> Timeline Service
+    -> Scheduler Services & it's Configurations
+    -> Changing Queue configuration via UI
+    -> Container Management 
+    -> YARN Federation
+    
+Ambari
+Avro
+Cassendra
+Chukwa
+Hive
+HBase
+Pig 
+Mahout
+Spark
+Zookeeper
+Kudu
+Impala
+Solr
+Kafka
+
+-----------------------------------------------------Basic Hadoop------------------------------------------------------------------------
+Common 
+HDFS
+YARN
 -----------------------------------------------------Hadoop Components---------------------------------------------------------------------
 
 Hadoop Common: The common utilities that support the other Hadoop modules.
