@@ -1,2 +1,20 @@
 
 EPEL - Extra Package For Enterprise Linux (Ref: https://fedoraproject.org/wiki/EPEL)
+
+Vertical scaling - Vertical scaling is increasing the capacity (storage or computing) of single machine to support our data processing needs.
+
+Horizontal scaling - Horizontal Scaling is instead of adding or increasing capacity(storage or computing) to single machine we connect another machine 
+to existing machine & operating system in existing machine can use the resources in newly added machine. In this software / OS gives you the view as single system
+although there are multiple machines underline.
+There are many systems / processing systems which are horizontally scalable like - Hadoop,Teradata,MongoDB,Cassendra,GreenPlum,etc.
+
+Latency- Time to get first record. Where user clicks the button & get the response. Critical for interactive systems.
+
+Thruput-Number of records processed per unit of time.
+
+If your goal is to process Huge Data then your goal is to increase the thruput. Means High number of records processed per unit of time.
+If your goal is to have an highly interactive system then your goal should be to minimize latency of your system.
+
+Goal of Hadoop is to process huge data hense hadoop can be used for batch processing where a delay in processing data is acceptable.
+Goal of MongoDB or Cassendra is to provide low latency to the user hense MongoDB or Cassendra is preferred in backend of websites.
+
