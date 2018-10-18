@@ -32,12 +32,24 @@ Re-replication- Every data node(DN) sends an heart beat to name node(NN) after a
 Rack-Awareness- If NN keeps all 3 copies of block (If replication factor is 3) and if entire rack becomes unavailable then all three copies becomes unavailabel.
                 Hense HDFS provide rack awareness feature. Where NN is aware of rack & it keeps two copies on one rack and one copy on DN on another rack.
                 
+Fault - Data Node Failure, Disk Failure, N/w Failure
 
 Storage Policies- 
 
 Erasure Encoding-
 
-High Availability-
+Name Node- Name node has file to block mapping, it has entire directory structure of file system or File system name space or FS image.
+           Every read and write to HDFS starts from NN. If NN goes down then we won't be able to write or read from HDFS. 
+           NN is the single point of failure for HDFS.
 
+High Availability- 
 
+FSImage- FSImage is the copy for entire HDFS Name Space. FS Image willbe entire HDFS directory structure in Disk as well as RAM memory of NN.
+         Every change to FS Image is first goes as an edit entry to edit logs. These edit logs are created by Journal Node deamon on NN.
+         So to recreate FS Image we need to have backup of edit logs.
+         Since Journal node creates / writes to edits we need to have HA for Journal Node deamons. This is achived using  Quorum Journal Manager(QJM).
+         
+         So when we have HA in Hadoop then instead of writing edit entries to Journal Node NN write edit entries to QJM.
+         Attaching image for HDFS HA
+         
 Secondary Name Node-
