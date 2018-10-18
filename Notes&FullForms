@@ -18,3 +18,26 @@ If your goal is to have an highly interactive system then your goal should be to
 Goal of Hadoop is to process huge data hense hadoop can be used for batch processing where a delay in processing data is acceptable.
 Goal of MongoDB or Cassendra is to provide low latency to the user hense MongoDB or Cassendra is preferred in backend of websites.
 
+Fault Tolerance- Fault is actually the failure of system / curruption of data/block / unavalilability of block due to n/w issue.
+                 Fault Tolerance is the ability of systems to recover or keep system stable in case of fault.
+                 Hadoop provide fault tolerance for HDFS using replication.
+
+
+Replication- Data/File is splitted in block and there are multiple copies of same block kept on different machines in case of any block curruption/Node failure, etc.
+
+Re-replication- Every data node(DN) sends an heart beat to name node(NN) after a specific interval of time. 
+                So Name Node will come to know the failure of DN. Once NN will understand that DN is failed then it'll initiate re-replication based on available copies of data.
+                If replication factor is 3 and two copies got currupt then NN will initiate re-replication for two copies.
+                
+Rack-Awareness- If NN keeps all 3 copies of block (If replication factor is 3) and if entire rack becomes unavailable then all three copies becomes unavailabel.
+                Hense HDFS provide rack awareness feature. Where NN is aware of rack & it keeps two copies on one rack and one copy on DN on another rack.
+                
+
+Storage Policies- 
+
+Erasure Encoding-
+
+High Availability-
+
+
+Secondary Name Node-
